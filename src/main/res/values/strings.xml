@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">JzgCrash</string>
+    <string name="exception_toast">App出了点问题，详细信息记录在%1$s中，请提交给精真估开发人员"</string>
+</resources>

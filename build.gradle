@@ -1,0 +1,53 @@
+apply plugin: 'com.android.library'
+
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+}
+
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'libCrash'
+
+    publishedGroupId = 'com.jzg.crash'
+    libraryName = 'libCrash'
+    artifact = 'libCrash'
+    libraryDescription = 'handle crash info caused by exception and save to log files'
+
+    siteUrl = 'https://github.com/voiceofnet2012/libCrash'
+    gitUrl = 'https://github.com/voiceofnet2012/libCrash.git'
+    githubRepository= 'voiceofnet2012/libCrash'
+
+    libraryVersion = '1.0'
+    developerId = 'voiceofnet2012'
+    developerName = 'voiceofnet'
+    developerEmail = 'voiceofnet2012@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
+apply from: 'https://raw.githubusercontent.com/nisrulz/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/nisrulz/JCenter/master/bintrayv1.gradle'
+
