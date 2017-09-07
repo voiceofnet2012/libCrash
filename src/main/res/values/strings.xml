@@ -4,4 +4,5 @@
     <string name="copy_ok">复制完成，发给程序员去修复吧</string>
     <string name="log_list_title">App日志列表</string>
     <string name="log_detail_title">日志详情(点击内容可复制)</string>
+
 </resources>
