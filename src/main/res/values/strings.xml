@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">JzgCrash</string>
+    <string name="exception_toast">App出了点问题，重启app后在设置中将日志文件提交给开发人员"</string>
+    <string name="copy_ok">复制完成，发给程序员去修复吧</string>
+    <string name="log_list_title">App日志列表</string>
+    <string name="log_detail_title">日志详情(点击内容可复制)</string>
+</resources>
