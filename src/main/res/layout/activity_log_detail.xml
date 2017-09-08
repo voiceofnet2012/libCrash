@@ -9,11 +9,15 @@
 
     <include layout="@layout/common_header_layout" />
 
-    <TextView
-        android:id="@+id/tvContent"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:textColor="@android:color/black"
-        android:textSize="12sp" />
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+		<TextView
+			android:id="@+id/tvContent"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:textColor="@android:color/black"
+			android:textSize="12sp" />
+	</ScrollView>
 
 </LinearLayout>
